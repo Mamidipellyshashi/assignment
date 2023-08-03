@@ -1,0 +1,18 @@
+<html>
+<body align="center" bgcolor="skyblue"><br><br><br>
+<h1>Please click the submit button to get the response:</h1>
+<button onclick="myFunction()">Submit</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+var txt;
+if (confirm("Press ok for result")) {
+txt = "{'URO': [198, 187, 181],<br>'BIL': [197, 180, 165],<br>'KET': [205, 189, 173],<br>'BLD': [176, 158, 146],<br>'PRO': [182, 151, 99],<br>'NIT': [161, 158, 120],<br>'LEU': [185, 163, 142],<br>'GLU': [174, 159, 142],<br>'SG': [160, 162, 131],<br>'PH': [171, 165, 130]}";
+} else {
+txt = "You pressed Cancel!";
+}
+document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</body>
+</html>
